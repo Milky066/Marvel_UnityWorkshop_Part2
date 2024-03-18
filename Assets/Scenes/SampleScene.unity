@@ -406,7 +406,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 126158772}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1145637294}
+        m_TargetAssemblyTypeName: MenuManager, Assembly-CSharp
+        m_MethodName: LoadPlayerProgress
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &126158772
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1362,7 +1374,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &356424250
 Transform:
   m_ObjectHideFlags: 0
@@ -3366,18 +3378,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6916533565282843059, guid: 51a98483047867744be1f61f3575b6ba, type: 3}
   m_PrefabInstance: {fileID: 270771727038037434}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1139106970
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1139106964}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4d8951d81b1ae0640a5c081a6d22e076, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1139106971
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3403,6 +3403,7 @@ GameObject:
   - component: {fileID: 1145637292}
   - component: {fileID: 1145637291}
   - component: {fileID: 1145637290}
+  - component: {fileID: 1145637294}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -3495,6 +3496,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1145637294
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1145637289}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 126007b908331d34a90099ce4fd34476, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!43 &1181954702
 Mesh:
   m_ObjectHideFlags: 0
@@ -4095,7 +4108,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1450993246}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1145637294}
+        m_TargetAssemblyTypeName: MenuManager, Assembly-CSharp
+        m_MethodName: SavePlayerProgress
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1450993246
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5599,7 +5624,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 996972994813113647, guid: 51a98483047867744be1f61f3575b6ba, type: 3}
       propertyPath: actions.Array.size
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 996972994813113647, guid: 51a98483047867744be1f61f3575b6ba, type: 3}
       propertyPath: actions.Array.data[0]
@@ -5612,7 +5637,7 @@ PrefabInstance:
     - target: {fileID: 996972994813113647, guid: 51a98483047867744be1f61f3575b6ba, type: 3}
       propertyPath: actions.Array.data[2]
       value: 
-      objectReference: {fileID: 11400000, guid: f51db401364bc2c43bf49a792456f158, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 3426791313184587078, guid: 51a98483047867744be1f61f3575b6ba, type: 3}
       propertyPath: speed
       value: 5
@@ -5677,9 +5702,6 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6916533565282843059, guid: 51a98483047867744be1f61f3575b6ba, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1139106970}
     - targetCorrespondingSourceObject: {fileID: 6916533565282843059, guid: 51a98483047867744be1f61f3575b6ba, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1139106971}
