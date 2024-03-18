@@ -29,6 +29,7 @@ public static class PlayerSaveLoader
         FileStream fileStream = new FileStream(savePath, FileMode.Create);
         StreamWriter writer = new StreamWriter(fileStream);
         writer.Write(jsonData);
+
         writer.Close();
         fileStream.Close();
 
@@ -39,11 +40,13 @@ public static class PlayerSaveLoader
     {
         FileStream fileStream = new FileStream(savePath, FileMode.Open);
         StreamReader reader = new StreamReader(fileStream);
+
         string jsonData = reader.ReadToEnd().ToString();
         PlayerData playerData = JsonUtility.FromJson<PlayerData>(jsonData);
         Vector3 loadPosition = new Vector3(playerData.positionX, playerData.positionY, playerData.positionZ);
         PlayerController.instance.transform.position = loadPosition;
         Physics.SyncTransforms();
+
         reader.Close();
         fileStream.Close();
         Debug.Log(string.Format("Loaded at {0}", loadPosition));
