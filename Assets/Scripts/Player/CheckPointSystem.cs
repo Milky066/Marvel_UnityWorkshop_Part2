@@ -26,6 +26,9 @@ public class CheckPointSystem : MonoBehaviour
     public void RespawnPlayer()
     {
         Debug.Log("Respawn player at " + latestCheckpoint);
+        // Without Singleton, we have to do this
+        //PlayerController playerController = GetComponent<PlayerController>();
+        // playerController,transform.position = lasestCheckpoint;
         PlayerController.instance.transform.position = latestCheckpoint;
         Physics.SyncTransforms();
 

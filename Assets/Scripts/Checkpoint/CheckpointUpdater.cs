@@ -8,9 +8,10 @@ public class CheckpointUpdater : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            //Debug.Log(CheckPointSystem.instance.gameObject.name);
-            Debug.Log(string.Format("Update {0} at {1}", gameObject.name, transform.position));
+            //CheckPointSystem checkPointSystem = transform.parent.GetComponent<CheckPointSystem>();
+            //checkPointSystem.UpdateCheckpoint(transform.position);
             CheckPointSystem.instance.UpdateCheckpoint(transform.position);
+
         }
     }
 }

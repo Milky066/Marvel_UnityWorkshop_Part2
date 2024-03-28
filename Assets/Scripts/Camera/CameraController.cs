@@ -30,7 +30,8 @@ public class CameraController : MonoBehaviour
 
     public Quaternion GetPlanarRotation()
     {
-        // aka horizontal rotation
+        // aka horizontal rotation4
+
         return Quaternion.Euler(0, xRotation, 0);
     }
 }
