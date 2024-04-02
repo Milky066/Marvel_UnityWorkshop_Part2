@@ -5734,7 +5734,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 996972994813113647, guid: 51a98483047867744be1f61f3575b6ba, type: 3}
       propertyPath: actions.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 996972994813113647, guid: 51a98483047867744be1f61f3575b6ba, type: 3}
       propertyPath: actions.Array.data[0]
@@ -5751,6 +5751,10 @@ PrefabInstance:
     - target: {fileID: 3426791313184587078, guid: 51a98483047867744be1f61f3575b6ba, type: 3}
       propertyPath: speed
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3426791313184587078, guid: 51a98483047867744be1f61f3575b6ba, type: 3}
+      propertyPath: loadProgress
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4546440875360173666, guid: 51a98483047867744be1f61f3575b6ba, type: 3}
       propertyPath: raycastDistance

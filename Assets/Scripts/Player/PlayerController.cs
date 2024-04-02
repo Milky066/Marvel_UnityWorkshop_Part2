@@ -7,6 +7,7 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     public static PlayerController instance;
     [SerializeField] private float speed = 3f;
+    [SerializeField] private bool loadProgress = false;
 
     [Header("Ground Check")]
     [SerializeField] private float groundCheckRadius = 0.2f;
@@ -30,9 +31,12 @@ public class PlayerController : MonoBehaviour
         }
         animator = GetComponent<Animator>();
         characterController = gameObject.GetComponent<CharacterController>();
-    }
+        if (loadProgress)
+        {
+            PlayerSaveLoader.LoadProgressJson();
+        }
 
-    // Update is called once per frame
+    }
     void Update()
     {
         float horizontal = Input.GetAxis("Horizontal");
